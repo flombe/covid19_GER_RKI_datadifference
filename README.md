@@ -1,12 +1,24 @@
-## Welcome to GitHub Pages
+## RKI vs cumulated Data
 
-You can use the [editor on GitHub](https://github.com/flombe/covid19_GER_RKI_datadifference/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Erklärung der Diskrepanz neuer COVID-19 Fallzahlen in Deutschland zwischen Robert-Koch Institut (RKI) und anderen Datenquellen, die Angaben der Gesundheitsämter kumulieren. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Tägliche Differenz 
 
-### Markdown
+Tabelle
+```markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+          RKI   /   JHU
+Tag /           /
+```
+
+### Visualisierung 
+
+### Gründe
+
+
+### Datenwahl 
+
+
 
 ```markdown
 Syntax highlighted code block
