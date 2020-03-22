@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c2c3ed7-f0df-4f2b-9e00-f2fd3c186796" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/colon_separator_example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/colon_separator_example.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/get_JHU.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/get_JHU.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +23,23 @@
         <counts>
           <entry key="csv" value="6" />
           <entry key="html" value="1" />
-          <entry key="py" value="1" />
+          <entry key="ico" value="1" />
+          <entry key="png" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="6" />
           <entry key="HTML" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Image" value="4" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="201" />
-          <entry key="html" value="513" />
+          <entry key="html" value="727" />
           <entry key="py" value="440" />
           <entry key="txt" value="17" />
         </counts>
@@ -45,7 +47,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="201" />
-          <entry key="HTML" value="513" />
+          <entry key="HTML" value="727" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Python" value="440" />
         </counts>
@@ -57,8 +59,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="33" column="305" selection-start-line="33" selection-start-column="305" selection-end-line="33" selection-end-column="305" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/get_JHU.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -101,11 +112,12 @@
         <option value="$PROJECT_DIR$/get_JHU.py" />
         <option value="$PROJECT_DIR$/data/colon_separator_example.csv" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/python/get_JHU.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="108" />
+    <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="715" />
   </component>
@@ -126,6 +138,11 @@
               <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
               <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584873755015</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="index.html">
+      <created>1584875750845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584875750845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -215,7 +239,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="108" width="1260" height="715" extended-state="0" />
+    <frame x="0" y="23" width="1260" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -295,10 +319,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/sort_asc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/sort_desc_disabled.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/plot_bar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/get_JHU.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="33" column="305" selection-start-line="33" selection-start-column="305" selection-end-line="33" selection-end-column="305" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
