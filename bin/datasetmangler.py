@@ -1,8 +1,12 @@
-import pandas as pd
+#<><><><><><><>< DatasetMangler ><><><><><><><><>
+class DatasetMangler:
 
-## to do: automate download
+    def __init__(self):
+        self.logger = logging.getLogger("DatasetMangler")
+        self.cwd = os.path.abspath(os.getcwd())
+        self.fileName = None
 
-class get:
+    def downloadGitTarball(self, url):
     df_ger = pd.read_csv (r'/Users/Florian/covid19_GER_RKI_datadifference/JHU_data/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv')
     df_ger = df_ger[ df_ger["Country/Region"] == "Germany" ]
 
@@ -21,3 +25,10 @@ class get:
     print(df)
 
     df.to_csv(csv_JHU, encoding='utf-8', index=False)
+
+if __name__ == "__main__":
+    logging.basicConfig(format='[%(asctime)s:%(name)s:%(levelname)s]-> %(message)s', level=logging.DEBUG)
+
+    data = DatasetDownloader()
+    data.downloadGitTarball(JHU_CSSE_REPO)
+    data.unzipTarball()
