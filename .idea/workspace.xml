@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c2c3ed7-f0df-4f2b-9e00-f2fd3c186796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_JHU.py" afterDir="false" />
-    </list>
+    <list default="true" id="7c2c3ed7-f0df-4f2b-9e00-f2fd3c186796" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +31,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="440" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="440" />
         </counts>
       </usages-collector>
@@ -49,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_JHU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -172,6 +170,14 @@
       <option name="presentableId" value="Default" />
       <updated>1584803558595</updated>
     </task>
+    <task id="LOCAL-00001" summary="csv_JHU">
+      <created>1584870844430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584870844432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -184,7 +190,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="23" width="1260" height="715" extended-state="0" />
+    <frame x="20" y="23" width="1260" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -210,6 +216,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="csv_JHU" />
+    <option name="LAST_COMMIT_MESSAGE" value="csv_JHU" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JHU_data/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv">
@@ -238,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_JHU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
         </state>
       </provider>
     </entry>
