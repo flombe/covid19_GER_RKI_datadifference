@@ -18,9 +18,8 @@ Erklärung der Diskrepanz neuer COVID-19 Fallzahlen in Deutschland zwischen Robe
 
 
 ```markdown
-Syntax highlighted code block
-
-[RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) and ![Image](src)
+Quellen:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html](RKI)
 ```
 
 
