@@ -27,9 +27,12 @@
 
       <p>Unterschied in den COVID-19 Fallzahlen in Deutschland zwischen RKI und anderen Quellen. <a href='https://github.com/flombe/covid19_GER_RKI_datadifference'>Code on GitHub</a>.</p>
 
-      <p>Vergleichstabelle der gemeldeten täglichen Zahlen des RKI und JHU <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'>Robert Koch Institut</a>.</p>
+      <p>Vergleichstabelle der gemeldeten täglichen Zahlen des Robert Koch Instituts <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'>RKI</a> und der John-Hopkins University <a href='https://coronavirus.jhu.edu/map.html'>JHU</a>.</p>
       
       <div id='table-container'></div>
+
+      <p>Gründe für Unterschied: Zeitlicher Verzug bei der Bearbeitung der aktuellen Fallzahlen in den Gesundheitsämtern und bei der Weitergabe an das RKI. <a href='https://www.merkur.de/welt/corona-zahlen-statistik-robert-koch-institut-rki-hopkins-deutschland-corona-infektionen-zr-13602916.html'>RKI</a></p>
+
 
     </div><!-- /.container -->
 
@@ -60,7 +63,7 @@
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/colon_separator_example',
+        csv_path: 'data/colon_separator_example.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
