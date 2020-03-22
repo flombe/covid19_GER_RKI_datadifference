@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CSV to HTML Table</title>
+    <title>COVID19 RKI Differenz</title>
     <meta name="author" content="Florian Bemmerl">
     <meta content="Unterschied in den COVID-19 Fallzahlen in Deutschland zwischen RKI und anderen Quellen." />
 
@@ -21,32 +21,53 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container">
+      <h2>COVID-19: Verwirrung bei den Fallzahlen in Deutschland</h2>
 
-      <h2>COVID-19: RKI Delay</h2>
+      <p>____________________________________________________________________________________________________________________</p>
 
-      <p>Unterschied in den COVID-19 Fallzahlen in Deutschland zwischen RKI und anderen Quellen. <a href='https://github.com/flombe/covid19_GER_RKI_datadifference'>Code on GitHub</a>.</p>
+      <a href="https://github.com/flombe/covid19_GER_RKI_datadifference" target="_self">
+        <img align="right" src="data/github_logo.png" alt="GitHub" style="width:120px;height:25px;">
+      </a>
 
-      <p>Vergleichstabelle der gemeldeten täglichen Zahlen des Robert Koch Instituts <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'>RKI</a> und der John-Hopkins University <a href='https://coronavirus.jhu.edu/map.html'>JHU</a>.</p>
-      
+      <p>Erklärung des Unterschieds in den COVID-19 Fallzahlen in Deutschland zwischen RKI und anderen Quellen.</p>
+    </div>
+
+    <div class="container">
+      <br>
+      <br>
+      <p>Vergleichstabelle der gemeldeten täglichen Zahlen des Robert Koch Instituts <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'>(RKI)</a> und der John-Hopkins University <a href='https://coronavirus.jhu.edu/map.html'>(JHU)</a>.</p>
+
       <div id='table-container'></div>
 
       <figure>
       <img src="data/plot_bar.png" alt="Differenz COVID-19 Erkrankungen DE.">
-      <figcaption>Differenz der bestätigten COVID-19 Erkrankten in DE.</figcaption>
+      <figcaption>[Plot 1] Differenz der bestätigten COVID-19 Erkrankten in DE.</figcaption>
       </figure>
 
-      <p>____________________________________________</p>
-      <p>Gründe für Unterschied:</p>
-      <p>Zeitlicher Verzug bei der Bearbeitung der aktuellen Fallzahlen in den Gesundheitsämtern und bei der Weitergabe an das RKI. <a href='https://www.merkur.de/welt/corona-zahlen-statistik-robert-koch-institut-rki-hopkins-deutschland-corona-infektionen-zr-13602916.html'>Quelle</a></p>
-      <p>Bla Bla Bla mehr stuff..</p>
+      <br>
+      <br>
+      <p>_________________________________________________________________________________________________________________________________</p>
+
+      <h4>Unterschied:</h4>
+      <p>Zeitlicher Verzug bei der Bearbeitung der aktuellen Fallzahlen in den Gesundheitsämtern und bei der Weitergabe an das RKI. <a href='https://www.tagesschau.de/faktenfinder/zahlen-coronavirus-101.html'>Quelle: Tagesschau</a></p>
+      <p>  - Keine der Zahlen sind "falsch" nur zeitlich verzögert.</p>
+      <p>  - Bei einem Vergleich der Daten sollte immer auf die Quelle und den Zeitstempel der Daten geachtet werden!</p>
+
+      <p>_________________________________________________________________________________________________________________________________</p>
+
+
+
+      <img src="data/Logo_WIRvsVIRUS.jpg" alt="WIRvsVIRUS Hackathon" style="width:450px;height:140px;" hspace="40"> <img src="data/Zusammen.png" alt="Zusammen gegen Corona" style="width:200px;height:66px;">
+
+      <p>Im Zuge des "WIRvsVIRUS" Hackathon der Bundesregierung entstanden.</p>
 
     </div><!-- /.container -->
 
     <footer class='footer'>
       <div class='container-fluid'>
         <hr />
-        <p class='pull-right'><a href='https://github.com/flombe/covid19_GER_RKI_datadifference'>COVID-19 Data Difference</a> by Florian Bemmerl, Felix Staudigl</p>
+        <p class='pull-left'><a href='https://github.com/flombe/covid19_GER_RKI_datadifference'>COVID-19 Data Difference</a> on GitHub by Florian Bemmerl, Felix Staudigl</p>
       </div>
     </footer>
 
