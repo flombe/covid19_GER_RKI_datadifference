@@ -1,17 +1,14 @@
-## RKI vs cumulated Data
+# Korrekte COVID-19 Fallzahlen in Deutschland 
 
-Erklärung der Diskrepanz neuer COVID-19 Fallzahlen in Deutschland zwischen Robert-Koch Institut (RKI) und anderen Datenquellen, die Angaben der Gesundheitsämter kumulieren. 
+## Problem: RKI vs aggregierte Daten
+
+Erklärung der Diskrepanz neuer COVID-19 Fallzahlen in Deutschland zwischen Robert-Koch Institut (RKI) und anderer Datenquellen, die Angaben der Gesundheitsämter kumulieren. 
 
 ### Tägliche Differenz 
 
-Tabelle
-```markdown
-
-          RKI   /   JHU
-Tag /           /
-```
 
 ### Visualisierung 
+
 
 ### Gründe
 
@@ -21,29 +18,8 @@ Tag /           /
 
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Quellen:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html](RKI)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/flombe/covid19_GER_RKI_datadifference/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
