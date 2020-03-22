@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c2c3ed7-f0df-4f2b-9e00-f2fd3c186796" name="Default Changelist" comment="" />
+    <list default="true" id="7c2c3ed7-f0df-4f2b-9e00-f2fd3c186796" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,23 +22,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
+          <entry key="html" value="1" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
+          <entry key="HTML" value="1" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="282" />
           <entry key="py" value="440" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="282" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="440" />
         </counts>
@@ -45,10 +52,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/get_JHU.py">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+            <state relative-caret-position="177">
+              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -69,6 +76,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/get_JHU.py" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -90,24 +98,6 @@
             <path>
               <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
               <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
-              <item name="JHU_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
-              <item name="JHU_data" type="462c0819:PsiDirectoryNode" />
-              <item name="csse_covid_19_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid19_GER_RKI_datadifference" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid19_GER_RKI_datadifference" type="462c0819:PsiDirectoryNode" />
-              <item name="JHU_data" type="462c0819:PsiDirectoryNode" />
-              <item name="csse_covid_19_data" type="462c0819:PsiDirectoryNode" />
-              <item name="csse_covid_19_time_series" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,7 +184,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" weight="0.32744783" />
@@ -202,7 +192,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32744783" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32744783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -250,6 +240,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
         </state>
       </provider>
     </entry>
