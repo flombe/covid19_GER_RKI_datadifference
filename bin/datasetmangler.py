@@ -1,34 +1,43 @@
-#<><><><><><><>< DatasetMangler ><><><><><><><><>
+#!/bin/env python
+import os
+import logging
+import pandas as pd
+
 class DatasetMangler:
 
-    def __init__(self):
+    def __init__(self, workDir=None):
         self.logger = logging.getLogger("DatasetMangler")
-        self.cwd = os.path.abspath(os.getcwd())
-        self.fileName = None
+        self.cwd = os.path.abspath(os.getcwd()) if not workDir else os.path.abspath(workDir)
+        #
+        self.datasets = {
+            'confirmed': os.path.join(self.cwd,'csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv'),
+            'recovered': os.path.join(self.cwd,'csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv'),
+            'deaths': os.path.join(self.cwd,'csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv')
+            }
+        self.dataframe = pd.DataFrame()
 
-    def downloadGitTarball(self, url):
-    df_ger = pd.read_csv (r'/Users/Florian/covid19_GER_RKI_datadifference/JHU_data/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv')
-    df_ger = df_ger[ df_ger["Country/Region"] == "Germany" ]
+    def mangleData(self):
+        for key in self.datasets.keys():
+            self.logger.debug("Mangle dataset: %s", self.datasets[key])
 
-    df_re = pd.read_csv(r'/Users/Florian/covid19_GER_RKI_datadifference/JHU_data/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
-    df_re_ger = df_re[df_re["Country/Region"] == "Germany"]
-    df_ger = df_ger.append(df_re_ger)
+            if not os.path.exists(self.datasets[key]):
+                raise Exception("dataset does not exist")
 
-    df_de = pd.read_csv(r'/Users/Florian/covid19_GER_RKI_datadifference/JHU_data/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv')
-    df_de_ger = df_de[df_de["Country/Region"] == "Germany"]
-    df = df_ger.append(df_de_ger)
-    print(df)
+            df  = pd.read_csv(self.datasets[key])
+            self.dataframe = self.dataframe.append(df[ df["Country/Region"] == "Germany" ])
 
-    df.columns.values[0] = 'Type'
-    df = df.assign(Type = ("Confirmed", "Recovered", "Deaths"))
-    df = df.drop(['Lat', 'Long'], 1)
-    print(df)
+        self.dataframe.columns.values[0] = 'Type'
+        self.dataframe = self.dataframe.assign(Type = ("Confirmed", "Recovered", "Deaths"))
+        self.dataframe = self.dataframe.drop(['Lat', 'Long'], 1)
 
-    df.to_csv(csv_JHU, encoding='utf-8', index=False)
+    def saveData(self, filePath):
+        self.logger.info("Save data: %s", filePath)
+        self.dataframe.to_csv(filePath, encoding='utf-8', index=False)
+
 
 if __name__ == "__main__":
     logging.basicConfig(format='[%(asctime)s:%(name)s:%(levelname)s]-> %(message)s', level=logging.DEBUG)
 
-    data = DatasetDownloader()
-    data.downloadGitTarball(JHU_CSSE_REPO)
-    data.unzipTarball()
+    m = DatasetMangler()
+    m.mangleData()
+    m.saveData(os.path.join(os.getcwd(), 'data.csv'))
