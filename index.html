@@ -40,10 +40,10 @@
 
       <div id='table-container'></div>
 
-      <figure>
-      <img src="data/plot_bar.png" alt="Differenz COVID-19 Erkrankungen DE.">
-      <figcaption>[Plot 1] Differenz der bestätigten COVID-19 Erkrankten in DE.</figcaption>
-      </figure>
+
+      <p>_________________________________________________________________________________________________________________________________</p>
+      <br>
+      <img src="bin/compare_plot.png" alt="Differenz COVID-19 Data DE." >
 
       <br>
       <br>
@@ -83,20 +83,12 @@
 
 
     <script type="text/javascript">
-      function format_link(link){
-        if (link)
-          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-        else
-          return "";
-      }
-
       CsvToHtmlTable.init({
-        csv_path: 'data/colon_separator_example.csv',
+        csv_path: 'bin/data_html.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": false},
-        custom_formatting: [[4, format_link]]
+        datatables_options: {"paging": false}
       });
     </script>
   </body>
