@@ -13,7 +13,7 @@ logger = logging.getLogger("main")
 
 JHU_CSSE_REPO = "https://github.com/CSSEGISandData/COVID-19/archive/master.zip"
 RKI_REPO = "https://github.com/micgro42/COVID-19-DE/archive/master.zip"
-'''
+
 try:
     data = DatasetDownloader()
     data.downloadGitTarball(JHU_CSSE_REPO)
@@ -44,7 +44,7 @@ try:
     formater.saveData(os.path.join(os.getcwd(), 'data_final.csv'))
 except Exception:
     logger.exception("Fatal Script Error")
-'''
+
 # get plot
 try:
     plotter = DatasetPlotter(os.path.join(os.getcwd(), 'data_final.csv'))

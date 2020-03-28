@@ -34,7 +34,17 @@ class DatasetMerger:
         jhu = jhu.transpose()
         jhu = jhu.rename(columns={0: "JHU_Cases", 2: "JHU_Deaths"})
         jhu = jhu.drop(jhu.index[0:43])  # hacked...
+
+        # check for df row len (days entered), due to different update cycle of datasources
+        while (len(rki.index) != len(jhu.index)):
+            self.logger.info("DatasetMerger: Different data progression - drop newest entry that is advanced")
+            if len(rki.index) > len(jhu.index):
+                rki = rki.drop(rki.index[len(rki.index) - 1])
+            else:
+                jhu = jhu.drop(jhu.index[len(jhu.index) - 1])
+
         jhu.index = rki.index
+
         # better option(?): to cast indices and intersect
         # x = pd.to_datetime(jhu.columns[2:])
         # y = pd.to_datetime(df.columns[1:])
