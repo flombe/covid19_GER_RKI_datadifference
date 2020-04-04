@@ -7,7 +7,7 @@ setup_git() {
 
 commit_website_files() {
   git checkout -b master
-  git add bin/data_JHU.csv bin/data_RKI.csv bin/data_final.csv bin/compare_plot.png
+  git add bin/data_final.csv bin/compare_plot.png
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER - Daily Data Update"
 }
 
